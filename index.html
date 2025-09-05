@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Web Node_ETH | Empower Your Business</title>
+<style>
+/* ====== Fonts & Reset ====== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+body { font-family: 'Poppins', sans-serif; margin:0; color:#333; line-height:1.6; }
+/* ====== Hero Section ====== */
+header.hero { background: linear-gradient(135deg, #0077cc 0%, #005fa3 100%); color:#fff; text-align:center; padding:80px 20px; }
+header.hero .logo { max-width:150px; margin-bottom:20px; }
+header.hero h1 { font-size:3rem; margin:10px 0; }
+header.hero p { font-size:1.2rem; margin:15px 0; }
+header.hero .btn-primary { background:#fff; color:#0077cc; padding:12px 25px; border-radius:8px; text-decoration:none; font-weight:600; transition:0.3s; }
+header.hero .btn-primary:hover { background:#f0f0f0; }
+/* ====== Section Styles ====== */
+section { padding:60px 20px; text-align:center; }
+h2 { font-size:2rem; margin-bottom:40px; }
+/* ====== Service Cards & Portfolio ====== */
+.services .service-cards, .portfolio .portfolio-items { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:25px; margin-top:40px; }
+.card, .item { border:2px solid #0077cc; border-radius:12px; padding:25px; transition:0.3s; }
+.card:hover, .item:hover { transform:translateY(-5px); box-shadow:0 8px 20px rgba(0,0,0,0.1); }
+/* ====== Contact Form ====== */
+form { max-width:500px; margin:0 auto; display:flex; flex-direction:column; }
+form input, form textarea { padding:12px; margin-bottom:15px; border-radius:6px; border:1px solid #ccc; font-size:1rem; }
+form button.btn-primary { padding:12px; background:#0077cc; color:#fff; border:none; cursor:pointer; font-weight:600; border-radius:6px; transition:0.3s; }
+form button.btn-primary:hover { background:#005fa3; }
+/* ====== Footer ====== */
+footer { background:#333; color:#fff; padding:25px; text-align:center; font-size:0.9rem; }
+/* ====== Smooth Scroll ====== */
+html { scroll-behavior:smooth; }
+/* ====== Images ====== */
+.logo, .hero-img { max-width:200px; margin:0 auto; display:block; }
+</style>
+</head>
+<body>
+
+<!-- Hero Section -->
+<header class="hero">
+  <img src="https://via.placeholder.com/150x50.png?text=Web+Node+Logo" alt="Web Node_ETH Logo" class="logo">
+  <h1>Web Node_ETH</h1>
+  <p>Empowering Your Business with Digital Solutions</p>
+  <a href="#services" class="btn-primary">Our Services</a>
+</header>
+
+<!-- Services Section -->
+<section id="services" class="services">
+<h2>Our Services</h2>
+<div class="service-cards">
+  <div class="card"><h3>Custom Website</h3><p>Tailor-made websites for startups and businesses.</p></div>
+  <div class="card"><h3>Template Solutions</h3><p>Quick, professional, and cost-effective templates.</p></div>
+  <div class="card"><h3>Local Hosting</h3><p>Reliable hosting with local support and uptime.</p></div>
+  <div class="card"><h3>Advertising & Marketing</h3><p>Promote your brand with creative campaigns.</p></div>
+</div>
+</section>
+
+<!-- Portfolio Section -->
+<section id="portfolio" class="portfolio">
+<h2>Our Products</h2>
+<div class="portfolio-items">
+  <div class="item">Bingo WN</div>
+  <div class="item">E-Business Card</div>
+  <div class="item">E Thank-You for Coming</div>
+</div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="contact">
+<h2>Contact Us</h2>
+<form name="contact" method="POST" data-netlify="true">
+  <input type="text" name="name" placeholder="Name" required>
+  <input type="email" name="email" placeholder="Email" required>
+  <textarea name="message" placeholder="Message"></textarea>
+  <button type="submit" class="btn-primary">Send Message</button>
+</form>
+</section>
+
+<!-- Footer -->
+<footer>
+<p>© 2025 Web Node_ETH | Powering Solutions, Empowering People</p>
+</footer>
+
+<!-- JavaScript -->
+<script>
+// Smooth scrolling
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function(e){
+    e.preventDefault();
+    document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+  });
+});
+</script>
+
+</body>
+</html>
