@@ -12,7 +12,7 @@ define('FCPATH', __DIR__ . DIRECTORY_SEPARATOR);
  * and fires up an environment-specific bootstrapping.
  */
 
-// Ensure the current directory is pointing to the front controller's directory
+// Ensure the current directory is pointing to the front controller's directory gh
 chdir(__DIR__);
 
 // Load our paths config file
